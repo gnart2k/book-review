@@ -1,0 +1,12 @@
+.white-text {
+   color: rgb(255, 255, 255);
+}
+
+.btn:focus {
+   box-shadow: none !important;
+}
+
+.btn-primary {
+   border: none !important;
+   background-color: #f34703 !important;
+}
