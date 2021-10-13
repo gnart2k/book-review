@@ -9,7 +9,7 @@ function FullInfoBook({
   imageURL,
   id,
 }) {
-  const date = new Date(createdDate).toLocaleDateString('en-GB');
+  const date = new Date(createdDate).toLocaleDateString("en-GB");
   return (
     <div class="big-book mb-4">
       <Link to={`/post/${id}`}>
@@ -24,7 +24,7 @@ function FullInfoBook({
           {" "}
           Ngày đăng: {date} - Lượt xem: {view}{" "}
         </p>
-        <p class="big-book-author"> Ngưởi review: {creator} </p>
+        <p class="big-book-author"> Người review: {creator} </p>
         <div class="big-book-desc"> {description + "..."} </div>
       </div>
     </div>
