@@ -4,42 +4,42 @@ import axios from "axios";
 const members = [
   {
     name: "Lê Công Bách",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/bach.png",
     fb: "#",
   },
   {
     name: "Nguyễn Xuân Đông",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/dong.jpg",
     fb: "#",
   },
   {
     name: "Dương Phúc Tráng",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/trang.jpg",
     fb: "#",
   },
   {
     name: "Đinh Toàn Thắng",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/thang.jpg",
     fb: "#",
   },
   {
     name: "Bạch Song Đức",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/duc.jpg",
     fb: "#",
   },
   {
     name: "Hoàng Anh Minh",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/a.minh.jpg",
     fb: "#",
   },
   {
     name: "Nguyễn Vương Anh",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/v.anh.jpg",
     fb: "#",
   },
   {
     name: "Phạm Nhật Minh",
-    imageURL: "https://picsum.photos/50/50",
+    imageURL: "/anh_tv/minh.jpg",
     fb: "#",
   },
 ];
@@ -85,6 +85,12 @@ function Footer() {
                 href={member.fb}
               >
                 <img
+                  style={{
+                    width: "50px",
+                    objectFit: "contain",
+                    height: "50px",
+                    borderRadius: "50%",
+                  }}
                   className="img-fluid member"
                   src={member.imageURL}
                   alt={member.name}
@@ -100,6 +106,12 @@ function Footer() {
                 href={member.fb}
               >
                 <img
+                  style={{
+                    width: "50px",
+                    objectFit: "contain",
+                    height: "50px",
+                    borderRadius: "50%",
+                  }}
                   className="img-fluid member"
                   src={member.imageURL}
                   alt={member.name}
