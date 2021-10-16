@@ -24,7 +24,7 @@ function Post() {
         })
       );
 
-      setTimeData((prev) => allData.data.reverse());
+      setTimeData((prev) => allData.data);
     };
 
     fetchData();

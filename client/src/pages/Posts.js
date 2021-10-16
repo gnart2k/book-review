@@ -25,7 +25,7 @@ function Posts() {
       setTimeData((prev) => allData.data);
     };
     fetchData();
-  }, []);
+  }, [category]);
 
   return (
     <div>
@@ -52,7 +52,7 @@ function Posts() {
             <SuggestContainer type="Bài viết nổi bật" data={viewData} />
           </div>
         </div>
-        
+
       </div>
 
       <Footer />

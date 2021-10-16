@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -25,9 +25,9 @@ function Navbar() {
          {
             menu ? (
                <div className="menu is-active flex-column col-lg-4 col-md-12 col-sm-12">
-                  <Link to="/posts/contest" className="option"> Các bài dự thi</Link>
-                  <Link to="/posts/fptBook" className="option"> Các đầu sách của thư viện FPT</Link>
-                  <Link to="/posts/other" className="option"> Các đầu sách khác</Link>
+                  <Link to="/posts/contest" key="contest" className="option"> Các bài dự thi</Link>
+                  <Link to="/posts/fptBook" key="fptBook" className="option"> Các đầu sách của thư viện FPT</Link>
+                  <Link to="/posts/other" key="other" className="option"> Các đầu sách khác</Link>
                </div>
             ) : (<></>)
          }

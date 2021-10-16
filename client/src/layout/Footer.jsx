@@ -4,43 +4,43 @@ import axios from "axios";
 const members = [
   {
     name: "Lê Công Bách",
-    imageURL: "/anh_tv/bach.png",
-    fb: "#",
+    imageURL: "/anh_tv/bach.jpg",
+    fb: "https://www.facebook.com/100009513233784/",
   },
   {
     name: "Nguyễn Xuân Đông",
     imageURL: "/anh_tv/dong.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100026482940870/",
   },
   {
     name: "Dương Phúc Tráng",
     imageURL: "/anh_tv/trang.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100008590879256/",
   },
   {
     name: "Đinh Toàn Thắng",
     imageURL: "/anh_tv/thang.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100004408053727/",
   },
   {
     name: "Bạch Song Đức",
     imageURL: "/anh_tv/duc.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100055708056976/",
   },
   {
     name: "Hoàng Anh Minh",
     imageURL: "/anh_tv/a.minh.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100014942132987/",
   },
   {
     name: "Nguyễn Vương Anh",
     imageURL: "/anh_tv/v.anh.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100022506669226/",
   },
   {
     name: "Phạm Nhật Minh",
     imageURL: "/anh_tv/minh.jpg",
-    fb: "#",
+    fb: "https://www.facebook.com/100010438066784/",
   },
 ];
 
@@ -58,7 +58,6 @@ function Footer() {
     };
     fetchData();
   }, []);
-  console.log(view);
 
   return (
     <section className="about container">
