@@ -16,7 +16,7 @@ function RowSuggestionContainer(data) {
       </div>
       <div class="row container d-flex">
         {posts &&
-          posts.map((post) => {
+          posts.slice(0, 4).map((post) => {
             return (
               <div class="sm-book mb-5 col-lg-4">
                 <SimplifiedBook
