@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
@@ -7,10 +7,10 @@ function Navbar() {
    const [menu, setMenu] = useState(false);
 
    return (
-      <nav className="navbar container d-flex align-items-center justify-content-between p-3">
+      <nav className="navbar container d-flex align-items-center justify-content-between p-3 mt-3">
          <div className="logo">
             <Link className="text-logo" to="/">
-               <h1 className="lh-1">FPTU Book Review</h1>
+               <h1 className="">FPTU Book Review</h1>
             </Link>
          </div>
 
