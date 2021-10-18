@@ -3,8 +3,11 @@ import SimplifiedBook from "./SimplifiedBook";
 function RowSuggestionContainer(data) {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    setPosts((prev) => data.data);
-  });
+    console.log(data);
+    if (data.data != undefined) {
+      setPosts((prev) => data.data.slice(0, 3));
+    }
+  }, [data]);
   return (
     <section class="main-suggestion container mt-5 d-lg-block d-none">
       <div class="container mb-3">
@@ -26,7 +29,6 @@ function RowSuggestionContainer(data) {
                   id={post._id}
                 />
               </div>
-
             );
           })}
       </div>

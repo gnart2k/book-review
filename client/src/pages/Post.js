@@ -17,15 +17,24 @@ function Post() {
       const data = await api.get(`/${id}`);
       setPost((prev) => data.data);
 
-      const allData = await api.get(`/getOther/${id}`);
-      setViewData((prev) =>
-        allData.data.sort((a, b) => {
-          return a.views - b.views;
+      const date = await api.get(`/getOther/${id}`);
+      const view = await api.get(`/getOther/${id}`);
+      setTimeData((prev) =>
+        date.data.sort((a, b) => {
+          const date1 = new Date(a.updatedAt).getTime();
+          const date2 = new Date(b.updatedAt).getTime();
+          return date2 - date1;
         })
       );
-
-      setTimeData((prev) => allData.data);
+      setViewData((prev) =>
+        view.data.sort((a, b) => {
+          return b.views - a.views;
+        })
+      );
     };
+    console.log(viewData);
+    console.log("=========================");
+    console.log(timeData);
 
     fetchData();
   }, [id]);

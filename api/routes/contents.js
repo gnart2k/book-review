@@ -25,11 +25,11 @@ router.get(`/get`, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 router.get(`/getOther/:id`, async (req, res) => {
   try {
     const allPost = await Content.find({});
     filtered = allPost.filter((e) => e._id != req.params.id);
-    filtered.length = 3;
     res.status(200).json(filtered);
   } catch (err) {
     res.status(500).json(err);

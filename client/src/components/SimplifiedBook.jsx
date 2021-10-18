@@ -8,11 +8,11 @@ function SimplifiedBook({
   description,
   id,
 }) {
-  const date = new Date(createdDate).toLocaleDateString('en-GB');
+  const date = new Date(createdDate).toLocaleDateString("en-GB");
   return (
     <div class="sm-book mb-3">
       <Link to={`/post/${id}`}>
-        <img class="img-fluid" src={imageURL} alt="" />
+        <img class="simplified-book-img" src={imageURL} alt="" />
       </Link>
       <div class="sm-book-info">
         <Link to={`/post/${id}`}>

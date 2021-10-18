@@ -16,23 +16,33 @@ function Posts() {
       const content = await api.get(`/category/${category}`);
       setData((prev) => content.data);
 
-      const allData = await api.get(`/get`);
+      const view = await api.get(`/get`);
+      const date = await api.get(`/get`);
+      setTimeData((prev) =>
+        date.data.sort((a, b) => {
+          const date1 = new Date(a.updatedAt).getTime();
+          const date2 = new Date(b.updatedAt).getTime();
+          return date2 - date1;
+        })
+      );
       setViewData((prev) =>
-        allData.data.sort((a, b) => {
+        view.data.sort((a, b) => {
           return b.views - a.views;
         })
       );
-      setTimeData((prev) => allData.data);
     };
     fetchData();
   }, [category]);
-
+  if (timeData) {
+    const date1 = new Date(timeData[0].updatedAt).getTime();
+    console.log(date1);
+  }
   return (
     <div>
       <Navbar />
 
       <div className="container mt-5">
-        <Tag type={category}/>
+        <Tag type={category} />
         <div className="row container d-flex justify-content-between">
           <div className="col-lg-8">
             {data.map((a) => (
@@ -52,7 +62,6 @@ function Posts() {
             <SuggestContainer type="Bài viết nổi bật" data={viewData} />
           </div>
         </div>
-
       </div>
 
       <Footer />
