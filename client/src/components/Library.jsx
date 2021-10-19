@@ -19,9 +19,19 @@ function Library({ type, data }) {
   return (
     <section class="library container mb-2">
       <div class="library-title mb-4 d-flex justify-content-between align-items-end">
-        <h2 class="title mb-0">{type}</h2>
+        {
+          type == 'Open Your Book, Open Your Mind' ?
+            (
+              <div class="">
+                <h2 class="category-title mb-0 d-block d-sm-inline ">Open Your Book, </h2>
+                <h2 class="category-title mb-0 d-block d-sm-inline">Open Your Mind</h2>
+              </div>
+            )
+            : (<h2 class="category-title mb-0">{type}</h2>)
+        }
+
         {switcher(type)}
-      </div>
+      </div >
       <div className="row">
         <div className="col-lg-9">
           {data && (
@@ -60,7 +70,7 @@ function Library({ type, data }) {
           )}
         </div>
       </div>
-    </section>
+    </section >
   );
 }
 

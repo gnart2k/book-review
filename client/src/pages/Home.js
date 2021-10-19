@@ -25,7 +25,7 @@ function Home() {
     };
     setTimeout(async () => {
       await sv.put("/");
-    }, 15000);
+    }, 20000);
     fetchData();
   }, []);
   return (

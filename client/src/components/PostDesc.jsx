@@ -5,7 +5,7 @@ function PostDesc({ category, title, creator, createdDate, view }) {
    return (
       <div className="description">
          <Tag type={category} />
-         <h2> {title}</h2>
+         <h2 class="post-title"> {title}</h2>
          <hr />
          <div className="d-flex my-3">
             <i className="far fa-user-circle fs-1 me-2"></i>
