@@ -42,7 +42,7 @@ function Post() {
     <div>
       <Navbar />
       <section className="article container mx-auto row d-flex justify-content-between mt-4">
-        <div className="col-lg-8 mt-5">
+        <div className="col-lg-8 mt-5 p-0">
           {post && (
             <PostDesc
               category={post.category}
@@ -56,7 +56,7 @@ function Post() {
             <PostContent imageURL={post.imgUrl} content={post.content} />
           )}
         </div>
-        <div className="col-lg-3 mt-5">
+        <div className="col-lg-3 mt-3 p-0">
           <SuggestContainer type="Bài mới" data={timeData} />
           <SuggestContainer type="Bài viết nổi bật" data={viewData} />
         </div>
