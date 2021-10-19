@@ -62,20 +62,16 @@ function Footer() {
   return (
     <section className="about container">
       <hr />
-      <div className="container d-flex mt-3 row">
+      <div className="container d-flex mt-4 row">
         <div className="desc col-lg-4 me-3 mb-3">
           <h3 className="about-title">Về dự án</h3>
           <p className="about-desc">
-            FPTU Book review là một dự án thuộc bộ môn SSG104 của nhóm 2-lớp
-            SE1636. Dự án sẽ tổng hợp lại những bài review trong cuộc thi "Open
-            Your Book, Open Your Mind" do đại học FPT phát động, ngoài ra còn
-            đem đến những đầu sách chất lượng thuộc thư viện và các đầu sách
-            khác để bạn đọc có cái nhìn sơ lược về cuốn sách mình muốn đọc.{" "}
+            FPT Book Review là một dự án thuộc bộ môn SSG104 của nhóm 2 - lớp SE1636. Dự án sẽ tổng hợp lại những bài review trong cuộc thi "Open Your Book, Open Your Mind" do đại học FPT phát động, ngoài ra có những đầu sách chất lượng thuộc thư viện và các đầu sách hay khác để bạn đọc có cái nhìn sơ lược về cuốn sách mình muốn đọc.
           </p>
         </div>
 
         <div className="team col-lg-4 mb-3 d-flex flex-column justify-content-center align-items-center">
-          {/* <h3>Thành viên trong nhóm</h3> */}
+          <h3>Thành viên của nhóm</h3>
           <div className="member-container">
             {members.slice(0, 4).map((member) => (
               <a
@@ -118,7 +114,7 @@ function Footer() {
               </a>
             ))}
           </div>
-          <h5 className="mt-2 memberName"> {mem}</h5>
+          <h5 className="mt-3 memberName"> {mem}</h5>
         </div>
 
         <div className="col-lg-3 ms-lg-4 ms-0">
@@ -132,7 +128,7 @@ function Footer() {
               <i className="far fa-envelope fs-5"></i> bachlche163411@fpt.edu.vn
             </p>
           </div>
-          <div className="mt-1">
+          <div className="mt-4">
             <h4>Thống kê truy cập</h4>
             <p className="mb-1">
               <i class="fas fa-server"></i> Toàn bộ:{" "}

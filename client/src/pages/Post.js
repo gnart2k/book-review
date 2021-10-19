@@ -32,9 +32,9 @@ function Post() {
         })
       );
     };
-    console.log(viewData);
-    console.log("=========================");
-    console.log(timeData);
+    // console.log(viewData);
+    // console.log("=========================");
+    // console.log(timeData);
 
     fetchData();
   }, [id]);

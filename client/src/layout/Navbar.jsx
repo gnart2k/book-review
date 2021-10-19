@@ -24,7 +24,7 @@ function Navbar() {
          </button>
          {
             menu ? (
-               <div className="menu is-active flex-column col-lg-4 col-md-12 col-sm-12">
+               <div className="menu is-active flex-column col-12 col-lg-4">
                   <Link to="/posts/contest" key="contest" className="option"> Các bài dự thi</Link>
                   <Link to="/posts/fptBook" key="fptBook" className="option"> Các đầu sách của thư viện FPT</Link>
                   <Link to="/posts/other" key="other" className="option"> Các đầu sách khác</Link>

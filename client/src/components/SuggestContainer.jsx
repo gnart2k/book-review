@@ -4,7 +4,7 @@ import SimplifiedBook from "./SimplifiedBook";
 //
 function SuggestContainer({ type, data }) {
   return (
-    <div>
+    <div class="mb-4">
       <h5 class="mt-2 lh-1"> {type}</h5>
       <hr />
       {/* bai viet noi bat */}
